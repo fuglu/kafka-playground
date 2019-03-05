@@ -5,11 +5,17 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "producer": "ts-node src/producer.ts",
+    "consumer": "ts-node src/consumer.ts",
     "build": "tsc",
     "format": "prettier --write **/*.{ts,yml,json,md}",
     "lint": "tslint --project tsconfig.json"
   },
+  "dependencies": {
+    "kafka-node": "^3.0.1"
+  },
   "devDependencies": {
+    "@types/node": "^10.12.12",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
